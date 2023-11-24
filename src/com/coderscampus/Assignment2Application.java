@@ -14,14 +14,14 @@ public class Assignment2Application {
 		System.out.println("Pick a number between 1 and 100");
 		Scanner scanner = new Scanner(System.in);
 		int userGuess = scanner.nextInt();
-		// scanner.close();
 
 		while (userGuess < 1 || userGuess > 100) {
 			System.out.println("Your guess is not between 1 and 100, please try again: ");
 			userGuess = scanner.nextInt();
 		}
 
-		while (userGuess != rndm && guesses > 1) {
+		while (userGuess != rndm && guesses > 1) 
+			{
 			if (userGuess != rndm) {
 				System.out.println("That is not it! You have " + (guesses - 1) + (" guesses left."));
 			}
@@ -35,6 +35,11 @@ public class Assignment2Application {
 				userGuess = scanner.nextInt();
 				guesses--;
 			}
+			
+			if (userGuess < 1 || userGuess > 100) {
+					guesses = guesses +1;
+			}
+			
 			if (userGuess == rndm) {
 				System.out.println("You win!");
 			} else if (guesses == 1) {
