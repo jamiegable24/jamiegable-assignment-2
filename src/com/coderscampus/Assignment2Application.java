@@ -11,13 +11,9 @@ public class Assignment2Application {
 		boolean gameOver = false;
 		Random theRandomNumber = new Random();
 		int rndm = theRandomNumber.nextInt(101);
-		
-		System.out.println(rndm);
 
 		System.out.println("Pick a number between 1 and 100");
 		Scanner scanner = new Scanner(System.in);
-
-		// scanner.close();
 
 		while (!gameOver) {
 			int userGuess = scanner.nextInt();
