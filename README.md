@@ -1,2 +1,2 @@
-# jamiegable-assignment-2
+# RandomNumberGeneratorGuessingGame
  Coders Campus Assignment 2
